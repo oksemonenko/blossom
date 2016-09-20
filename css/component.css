@@ -1128,7 +1128,7 @@ button.trigger span::before {
 	left: 0;
 	height: 50%;
 	width: 25%;
-	background-image: url(../img/thumbs/1.jpg);
+	background-image: url(../img/thumbs/barbershop.png);
 }
 
 .intro-effect-grid .grid li:nth-child(2) {
@@ -1136,7 +1136,7 @@ button.trigger span::before {
 	left: 0;
 	height: 50%;
 	width: 25%;
-	background-image: url(../img/thumbs/2.jpg);
+	background-image: url(../img/thumbs/gllacy-1.png);
 }
 
 .intro-effect-grid .grid li:nth-child(3) {
@@ -1144,7 +1144,7 @@ button.trigger span::before {
 	left: 25%;
 	height: 100%;
 	width: 25%;
-	background-image: url(../img/thumbs/5.jpg);
+	background-image: url(../img/thumbs/kekstagram.jpg);
 }
 
 .intro-effect-grid .grid li:nth-child(4) {
@@ -1152,7 +1152,7 @@ button.trigger span::before {
 	left: 50%;
 	height: 50%;
 	width: 50%;
-	background-image: url(../img/thumbs/4.jpg);
+	background-image: url(../img/thumbs/pink.jpg);
 }
 
 .intro-effect-grid .grid li:nth-child(5) {
