@@ -1,3 +1,11 @@
+/*Colours
+ blue #48AFB2
+ lightblue #98CACD
+ pastelblue #A7C3C9
+ black #484F5B
+ lightgray #D2DDE3
+ white #FBFCFC*/
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
@@ -53,6 +61,10 @@ body, html {
 
 /*Customize lib*/
 
+body {
+    background-color: #FBFCFC;
+}
+
 .w3-display-middle {
     top: 80%;
 }
@@ -62,6 +74,7 @@ ul.w3-ul {
 }
 
 ul.w3-ul li {
+    padding: 0;
     border-bottom: none;
 }
 
@@ -72,4 +85,30 @@ a {
 footer {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
+
+.contact-link {
+    display: block;
+    padding: 5px 10px;
+    font-size: 0;
+}
+
+ul.w3-ul li:hover .fa {
+    /*color: red;*/
+}
+
+.w3-ul.w3-hoverable li:hover {
+    background-color: #48AFB2;
+}
+
+.bg-blue {
+    background-color: #48AFB2;
+    color: #FBFCFC;
+}
+
+.bg-black {
+    background-color: #484F5B;
+    color: #FBFCFC;
+}
+

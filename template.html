@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/template.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
 </head>
 <body>
 <!-- Navbar (sit on top) -->
@@ -25,7 +26,7 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-opacity w3-display-container">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">Оксана
+    <span class="w3-center w3-padding-xlarge w3-xlarge w3-wide w3-animate-opacity bg-black">Оксана
       <!--<span class="w3-hide-small">WEBSITE</span>-->
       Настоящая</span>
   </div>
@@ -127,33 +128,64 @@
       <p>Swing by for a cup of coffee, or leave me a note:</p>
       <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
         <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Имя">
+          <label>
+            <input class="w3-input w3-border w3-hover-light-grey" type="text" name="name" placeholder="Имя" required="required">
+          </label>
         </div>
         <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+          <label>
+            <input class="w3-input w3-border w3-hover-light-grey" type="text" name="email" placeholder="Email" required="required">
+          </label>
         </div>
       </div>
-      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Комментарий">
-      <button class="w3-btn w3-section w3-right">Отправить</button>
+      <label>
+        <textarea class="w3-input w3-border w3-hover-light-grey" name="name" placeholder="Комментарий"></textarea>
+      </label>
+      <input type="submit" class="w3-btn w3-section w3-right" value="Отправить">
     </div>
   </div>
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
-  <p>Разработано: <a href="https://oksemonenko.github.io" title="W3.CSS" target="_blank" class="w3-hover-opacity">Оксана Настоящая</a></p>
+<footer class="w3-center w3-padding-48 w3-hover-black bg-black">
+  <p>Разработано: <a href="https://oksemonenko.github.io" title="Oksana" target="_blank" class="w3-hover-opacity">Оксана Настоящая</a></p>
   <ul class="w3-ul w3-hoverable">
     <li>
-      <a href="https://github.com/oksemonenko">Github</a>
+      <a class="contact-link" href="https://github.com/oksemonenko" target="_blank">
+        <i class="fa fa-github w3-xxxlarge" aria-hidden="true"></i>
+        Github
+      </a>
     </li>
     <li>
-      <a href="https://www.linkedin.com/in/oksemonenko">LinkedIn</a>
+      <a class="contact-link" href="https://www.linkedin.com/in/oksemonenko" target="_blank">
+        <i class="fa fa-linkedin w3-xxxlarge" aria-hidden="true"></i>
+        LinkedIn
+      </a>
     </li>
     <li>
-      <a href="https://www.facebook.com/oksanasemonenko">Facebook</a>
+      <a class="contact-link" href="https://www.facebook.com/oksanasemonenko" target="_blank">
+        <i class="fa fa-facebook-official w3-xxxlarge" aria-hidden="true"></i>
+        Facebook
+      </a>
     </li>
   </ul>
 </footer>
+
+<!--<script type="text/javascript">-->
+  <!--$(document).ready(function(){-->
+    <!--$("#form").submit(function() { //устанавливаем событие отправки для формы с id=form-->
+      <!--var form_data = $(this).serialize(); //собераем все данные из формы-->
+      <!--$.ajax({-->
+        <!--type: "POST", //Метод отправки-->
+        <!--url: "send.php", //путь до php фаила отправителя-->
+        <!--data: form_data,-->
+        <!--success: function() {-->
+          <!--//код в этом блоке выполняется при успешной отправке сообщения-->
+          <!--alert("Ваше сообщение отправлено!");-->
+        <!--}});-->
+    <!--});-->
+  <!--});-->
+<!--</script>-->
 
 <!-- Add Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -191,9 +223,9 @@
   function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " bg-blue";
     } else {
-      navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+      navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top bg-blue", "");
     }
   }
 </script>
