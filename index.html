@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/template.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
 </head>
 <body>
 <!-- Navbar (sit on top) -->
@@ -26,9 +25,9 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-opacity w3-display-container">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-xlarge w3-xlarge w3-wide w3-animate-opacity bg-black">Оксана
-      <!--<span class="w3-hide-small">WEBSITE</span>-->
-      Настоящая</span>
+    <span class="w3-center w3-padding-xlarge w3-xlarge w3-wide w3-animate-opacity bg-black">Blossom
+      <span class="w3-hide-small">Dresses</span>
+    </span>
   </div>
 </div>
 
@@ -36,7 +35,7 @@
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">Обо мне</h3>
   <p class="w3-center"><em>Программист<br>Кутюрье</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
     qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   <div class="w3-row">
@@ -64,7 +63,7 @@
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64">
   <h3 class="w3-center">Мои платья</h3>
-  <p class="w3-center"><em>Вот некоторые из моих платьев.<br> Кликните на изображение для увеличения.</em></p><br>
+  <p class="w3-center"><em>Вот некоторые из моих платьев.<br>Кликните на изображение для увеличения.</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
@@ -79,38 +78,6 @@
     </div>
     <div class="w3-col m3">
         <img src="img/dresses/velvet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
-</div>
-
-<div class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center">Мои работы</h3>
-  <p class="w3-center"><em>Вот некоторые из моих проектов.<br> Кликните на изображение для перехода на сайт.</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <a href="https://oksemonenko.github.io/barbershop/" target="_blank">
-        <img src="img/barbershop.jpg" style="width:100%" class="w3-hover-opacity">
-      </a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://oksemonenko.github.io/gllacy" target="_blank">
-        <img src="img/gllacy-3.png" style="width:100%" class="w3-hover-opacity">
-      </a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://oksemonenko.github.io/kekstagram" target="_blank">
-        <img src="img/kekstagram.jpg" style="width:100%" class="w3-hover-opacity">
-      </a>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://oksemonenko.github.io" target="_blank">
-        <img src="img/pink-1.png" style="width:100%" class="w3-hover-opacity">
-      </a>
     </div>
   </div>
 </div>
@@ -191,48 +158,7 @@
     </li>
   </ul>
 </footer>
-
-<!--<script type="text/javascript">-->
-  <!--$(document).ready(function(){-->
-    <!--$("#form").submit(function() { //устанавливаем событие отправки для формы с id=form-->
-      <!--var form_data = $(this).serialize(); //собераем все данные из формы-->
-      <!--$.ajax({-->
-        <!--type: "POST", //Метод отправки-->
-        <!--url: "send.php", //путь до php фаила отправителя-->
-        <!--data: form_data,-->
-        <!--success: function() {-->
-          <!--//код в этом блоке выполняется при успешной отправке сообщения-->
-          <!--alert("Ваше сообщение отправлено!");-->
-        <!--}});-->
-    <!--});-->
-  <!--});-->
-<!--</script>-->
-
-<!-- Add Google Maps -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
 <script>
-  var myCenter = new google.maps.LatLng(59.941211490373384, 30.276885330677032);
-
-  function initialize() {
-    var mapProp = {
-      center: myCenter,
-      zoom: 12,
-      scrollwheel: false,
-      draggable: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-    var marker = new google.maps.Marker({
-      position: myCenter,
-    });
-
-    marker.setMap(map);
-  }
-
-  google.maps.event.addDomListener(window, 'load', initialize);
-
   // Modal Image Gallery
   function onClick(element) {
     document.getElementById("img01").src = element.src;
