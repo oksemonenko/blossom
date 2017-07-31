@@ -14,11 +14,8 @@
 <div class="w3-top">
   <ul class="w3-navbar" id="myNavbar">
     <li><a href="#" class="w3-padding-large">Главная</a></li>
-    <li><a href="#portfolio" class="w3-padding-large">Портфолио</a></li>
+    <li><a href="gallery.html" class="w3-padding-large">Портфолио</a></li>
     <li><a href="#contact" class="w3-padding-large">Контакты</a></li>
-    <li class="w3-hide-small w3-right">
-      <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
-    </li>
   </ul>
 </div>
 
@@ -140,6 +137,12 @@
   <p>Разработано: <a href="https://oksemonenko.github.io" title="Oksana" target="_blank" class="w3-hover-opacity">Оксана Настоящая</a></p>
   <ul class="w3-ul w3-hoverable">
     <li>
+      <a class="contact-link" href="https://vk.com/verdadera" target="_blank">
+        <i class="fa fa-vk w3-xxxlarge" aria-hidden="true"></i>
+        VK
+      </a>
+    </li>
+    <li>
       <a class="contact-link" href="https://github.com/oksemonenko" target="_blank">
         <i class="fa fa-github w3-xxxlarge" aria-hidden="true"></i>
         Github
@@ -157,6 +160,12 @@
         Facebook
       </a>
     </li>
+    <li>
+      <a class="contact-link" href="https://ru.pinterest.com/oksanasemonenko" target="_blank">
+        <i class="fa fa-pinterest-p w3-xxxlarge" aria-hidden="true"></i>
+        Pinterest
+      </a>
+    </li>
   </ul>
 </footer>
 <script>
@@ -171,9 +180,9 @@
   function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " bg-blue";
+      navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " bg-black";
     } else {
-      navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top bg-blue", "");
+      navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top bg-black", "");
     }
   }
 </script>
