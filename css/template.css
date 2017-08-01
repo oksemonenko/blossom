@@ -71,6 +71,7 @@ body {
 
 ul.w3-ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 ul.w3-ul li {
@@ -84,6 +85,7 @@ a {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 }
