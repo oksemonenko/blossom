@@ -72,11 +72,13 @@ body {
 ul.w3-ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 ul.w3-ul li {
     padding: 0;
     border-bottom: none;
+    max-height: 58px;
 }
 
 a {
