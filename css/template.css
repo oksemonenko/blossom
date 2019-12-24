@@ -10,11 +10,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     color: #777;
+    font-size: 18px;
     line-height: 1.8;
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     opacity: 0.7;
     background-attachment: fixed;
     background-position: center;
@@ -24,21 +25,27 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('../img/background/Tiger-1.jpg');
+    background-image: url('../img/background/Me.jpg');
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image */
 .bgimg-2 {
-    background-image: url("../img/background/Tiger-2.jpg");
-    background-position: top;
+    background-image: url("../img/background/Tiger-1.jpg");
+    background-position: center left;
     min-height: 400px;
 }
 
-/* Third image (Contact) */
+/* Third image */
 .bgimg-3 {
-    background-image: url("../img/background/Tiger-3.jpg");
+    background-image: url("../img/background/Tiger-2.jpg");
     min-height: 400px;
+}
+
+/* Fourth image */
+.bgimg-4 {
+    background-image: url("../img/background/Tiger-3.jpg");
+    min-height: 500px;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -53,7 +60,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
         background-attachment: scroll;
     }
 }
